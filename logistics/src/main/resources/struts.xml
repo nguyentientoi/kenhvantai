@@ -8,11 +8,16 @@
 	<constant name="struts.devMode" value="true" />
 	
 	<package name="default" namespace="/" extends="struts-default">
+		<result-types>
+			<result-type name="tiles"
+				class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+	
 		<action name="Login">
 			<result>html/jsp/page/login/login.jsp</result>
 		</action>
 		<action name="Welcome" class="com.afree.logistics.action.WelcomeUserAction" method="execute">
-			<result name="SUCCESS">html/jsp/page/welcome/welcome_user.jsp</result>
+			<result name="SUCCESS" type="tiles">/welcome.tiles</result>
 		</action>
 	</package>
 

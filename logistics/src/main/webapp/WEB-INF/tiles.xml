@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="frontendLayout" template="/html/jsp/page/layout/frontend/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/html/jsp/page/layout/frontend/header.jsp" />
+		<put-attribute name="nav" value="/html/jsp/page/layout/frontend/nav.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/html/jsp/page/layout/frontend/footer.jsp" />
+	</definition>
+	<definition name="backendLayout" template="/html/jsp/page/layout/backend/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/html/jsp/page/layout/backend/header.jsp" />
+		<put-attribute name="menu" value="/html/jsp/page/layout/backend/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/html/jsp/page/layout/backend/footer.jsp" />
+	</definition>
+	
+	<definition name="/welcome.tiles" extends="frontendLayout">
+		<put-attribute name="title" value="Xin chào" />
+		<put-attribute name="body" value="/html/jsp/page/welcome/Welcome_user.jsp" />
+	</definition>
+</tiles-definitions>

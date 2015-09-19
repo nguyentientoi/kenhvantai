@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="author" content="">
-<%-- 		<title><tiles:insertAttribute name="title" ignore="true" /></title> --%>
+		<title><tiles:insertAttribute name="title" ignore="true" /></title>
 		
 		<!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -47,10 +47,10 @@
 		
 		<tiles:insertAttribute name="nav" />
 		
-<%-- 		<tiles:insertAttribute name="header" /> --%>
+		<tiles:insertAttribute name="header" />
 		
-<%-- 		<tiles:insertAttribute name="body"/> --%>
+		<tiles:insertAttribute name="body"/>
 		
-<%-- 		<tiles:insertAttribute name="footer" /> --%>
+		<tiles:insertAttribute name="footer" />
 	</body>
 </html>

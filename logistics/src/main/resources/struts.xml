@@ -19,6 +19,9 @@
 		<action name="Welcome" class="com.afree.logistics.action.WelcomeUserAction" method="execute">
 			<result name="SUCCESS" type="tiles">/welcome.tiles</result>
 		</action>
+		<action name="Register" class="com.afree.logistics.action.WelcomeUserAction" method="register">
+			<result name="SUCCESS" type="tiles">createAccount.tiles</result>
+		</action>
 	</package>
 
 </struts>

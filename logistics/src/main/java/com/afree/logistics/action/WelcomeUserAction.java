@@ -15,6 +15,10 @@ public class WelcomeUserAction {
 		return "SUCCESS";
 	}
 
+	public String register() {
+		return "SUCCESS";
+	}
+
 	/**
 	 * log server
 	 */

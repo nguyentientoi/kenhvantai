@@ -1,7 +1,8 @@
 /**
  * 
  */
-package com.afree.logistics.core.hibernate;
+package com.afree.core.database;
+
 
 /**
  * @author ToiNT

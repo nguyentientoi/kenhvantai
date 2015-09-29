@@ -8,6 +8,11 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx.xsd">
+        
+        <bean id="userPersistence" class="com.afree.logistics.service.persistence.impl.UsersImpl">
+        	<property name="_sessionFactory" ref="_sessionFactory" />
+        </bean>
+        
  
 <!--     <bean id="listProductActionBean" class="net.codejava.framework.action.ListProductAction"> -->
 <!--         <property name="productDAO" ref="productDAO" /> -->

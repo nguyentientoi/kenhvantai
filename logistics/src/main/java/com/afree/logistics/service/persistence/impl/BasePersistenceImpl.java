@@ -25,6 +25,7 @@ import org.hibernate.metadata.ClassMetadata;
 import org.hibernate.metadata.CollectionMetadata;
 import org.hibernate.stat.Statistics;
 
+import com.afree.core.exception.SystemException;
 import com.afree.logistics.model.BaseModel;
 import com.afree.logistics.service.persistence.BasePersistence;
 
@@ -125,12 +126,14 @@ public class BasePersistenceImpl<T extends BaseModel<T>> implements
 		return _sessionFactory.getTypeHelper();
 	}
 
-	public T update(T model) throws Exception {
-		return null;
+	public T update(T model) throws SystemException {
+		openSession().update(model);
+		return model;
 	}
 
-	public T remove(T model) throws Exception {
-		return null;
+	public void delete(T model) throws SystemException {
+
+		openSession().delete(model);
 	}
 
 	private SessionFactory _sessionFactory;

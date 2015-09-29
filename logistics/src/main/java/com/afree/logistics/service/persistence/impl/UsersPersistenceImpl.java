@@ -3,6 +3,8 @@
  */
 package com.afree.logistics.service.persistence.impl;
 
+import org.hibernate.Session;
+
 import com.afree.logistics.model.Users;
 import com.afree.logistics.service.persistence.UsersPersistence;
 
@@ -12,5 +14,12 @@ import com.afree.logistics.service.persistence.UsersPersistence;
  */
 public class UsersPersistenceImpl extends BasePersistenceImpl<Users> implements
 		UsersPersistence {
+
+	@Override
+	public Users update(Users model) throws Exception {
+		Session session = openSession();
+
+		return super.update(model);
+	}
 
 }
